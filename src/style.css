@@ -1,0 +1,151 @@
+@import "@/assets/css/fonts.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.print-contener > div {
+  @apply border border-black p-2 text-center font-bold;
+}
+
+.print-contener > div:not(:last-child) {
+  @apply border-l-0;
+}
+.print-contener-content > div {
+  @apply border border-black border-t-0  font-bold;
+}
+.print-contener-content > div:not(:last-child) {
+  @apply border-l-0;
+}
+/* checkbox styles start */
+[type="checkbox"] {
+  font-family: fontAwesome;
+  text-align: center;
+  font-weight: normal;
+  font-size: 11px;
+  color: white;
+  accent-color: #4d44b5;
+  width: 18px;
+  height: 19px;
+  background-color: transparent;
+  border-radius: 3px;
+  vertical-align: middle;
+  border: 1.5px solid #c1bbeb !important;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+
+[type="checkbox"]:checked {
+  background-color: #4d44b5;
+}
+
+/* checkbox styles end */
+
+.Vue-Toastification__container {
+  width: inherit !important;
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+}
+
+.gm-style-iw {
+  padding: 0 !important;
+}
+
+[type="button"].gm-ui-hover-effect {
+  padding: 5px !important;
+}
+
+select {
+  background-position: left 0.5rem center;
+}
+
+.pagination {
+  list-style-type: none;
+}
+
+.pagination-item {
+  display: inline-block;
+}
+
+:root {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  --white: #ffffff;
+  --pm: #3cb464;
+  --gray: #4b4b4b;
+  --lgray: #e6e6e6;
+  --blue: #2e8a4d;
+  --shadow: 15px 16px 58px 0px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background: #f3f4ff;
+  width: 100%;
+  /*height: 100%;*/
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+  color: var(--gray);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1.2vmin;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  /*border: 1px solid #e7e7e7;*/
+}
+
+@supports (scrollbar-color: var(--blue) var(--white)) {
+  * {
+    scrollbar-color: var(--blue) var(--white);
+    scrollbar-width: thin;
+  }
+}
+
+/* -------------------------- Text Selection Color -------------------------- */
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--white);
+  background: var(--blue);
+}
+
+::selection {
+  color: var(--white);
+  background: var(--blue);
+}

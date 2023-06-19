@@ -1,0 +1,5 @@
+{
+  "url": "https://localhost:44373/swagger/v1/swagger.json",
+  "dir": "./src/services",
+  "prefix": ""
+}
